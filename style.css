@@ -105,7 +105,6 @@ footer {
 #theme-toggle:checked + .toggle {
   background: #444;
 }
-/* ===== PAGE TRANSITION ===== */
 .page-transition {
   animation: fadeSlide 0.8s ease forwards;
 }
@@ -118,5 +117,41 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+nav a {
+  display: block;
+  margin: 10px 0;
+}
+
+.card,
+.project-card {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.projects {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin: 0 15px;
+  }
+
+  .projects {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .card {
+    width: 70%;
   }
 }
