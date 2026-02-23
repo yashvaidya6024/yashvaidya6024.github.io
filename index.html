@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
-  <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, this is my website</h1>
-  <button onclick="sayHi()">Click me</button>
 
-  <script src="script.js"></script>
+    <header>
+        <h1>Yash vaidya</h1>
+        <p>Aspiring Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a student learning web development. This website is hosted using GitHub Pages.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Smart Surveillance System</li>
+            <li>Data Analytics Mini Project</li>
+            <li>Portfolio Website</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <button onclick="showEmail()">Show Email</button>
+        <p id="email"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Yash</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
