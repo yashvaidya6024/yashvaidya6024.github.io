@@ -102,3 +102,18 @@ footer {
 #theme-toggle:checked + .toggle {
   background: #444;
 }
+/* ===== PAGE TRANSITION ===== */
+.page-transition {
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
