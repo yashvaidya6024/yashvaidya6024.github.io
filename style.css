@@ -46,12 +46,16 @@ nav a {
   padding: 80px 20px;
 }
 
-.card {
-  background: var(--card-bg);
-  margin: 40px auto;
+.card,
+.project-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   padding: 30px;
-  width: 80%;
-  border-radius: 15px;
+  color: var(--text);
 }
 
 .projects {
@@ -61,12 +65,10 @@ nav a {
   padding: 40px;
 }
 
-.project-card {
-  background: var(--card-bg);
-  padding: 20px;
-  width: 250px;
-  border-radius: 15px;
-  text-align: center;
+#theme-toggle:checked ~ * .card,
+#theme-toggle:checked ~ * .project-card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer {
